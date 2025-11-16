@@ -1,64 +1,38 @@
-# 🧪 Lista de Verificación de Pruebas
+# 📱 Actividad 12 - 🔐 App de Autenticación Biométrica
 
-## ✅ Pruebas Funcionales
+## 📋 Descripción
 
-### Autenticación Biométrica
+Aplicación Android que implementa autenticación biométrica (huella digital) utilizando la API BiometricPrompt de Android. La aplicación permite a los usuarios autenticarse de forma segura usando su huella digital registrada en el dispositivo.
 
--  [ ] La app se inicia correctamente
--  [ ] El botón de autenticación es visible
--  [ ] Al presionar el botón, aparece el prompt biométrico
--  [ ] La autenticación con huella correcta muestra mensaje de éxito
--  [ ] La autenticación con huella incorrecta muestra mensaje de error
--  [ ] Cancelar la autenticación funciona correctamente
+## 🎯 Objetivos de aprendizaje
 
-### Manejo de Estados
+-  🔐 Implementación de autenticación biométrica en Android
+-  📱 Uso de la API BiometricPrompt y BiometricManager
+-  🎨 Diseño de interfaces intuitivas para seguridad
+-  🔍 Manejo de diferentes estados de autenticación
+-  ⚡ Gestión de permisos y compatibilidad de dispositivos
 
--  [ ] El texto de estado cambia apropiadamente
--  [ ] Los colores de estado son correctos (verde para éxito, rojo para error)
--  [ ] Los mensajes son claros y comprensibles
+## 🛠️ Tecnologías utilizadas
 
-### Compatibilidad de Dispositivos
+-  🤖 **Android SDK**: API 23+ (Android 6.0+)
+-  ☕ **Lenguaje**: Java
+-  🔐 **BiometricPrompt**: androidx.biometric:biometric:1.1.0
+-  🎨 **Material Design**: Material Components
+-  🏗️ **Arquitectura**: MVC con helper classes
 
--  [ ] Funciona en dispositivos con sensor de huella
--  [ ] Muestra mensaje apropiado en dispositivos sin sensor
--  [ ] Maneja correctamente dispositivos sin huellas registradas
+## 📱 Funcionalidades
 
-## 🎨 Pruebas de UI/UX
+### Características principales:
 
-### Diseño Visual
+-  ✅ **Autenticación biométrica**: Utiliza BiometricPrompt para capturar huella digital
+-  🔍 **Verificación de compatibilidad**: Detecta automáticamente si el dispositivo soporta autenticación biométrica
+-  💬 **Feedback visual**: Mensajes claros de éxito, error y estados de autenticación
+-  🎨 **Diseño intuitivo**: Interfaz moderna con Material Design
+-  🛡️ **Manejo de errores**: Gestión robusta de diferentes escenarios de error
 
--  [ ] La paleta de colores es consistente
--  [ ] Las fuentes se cargan correctamente
--  [ ] El layout es responsive
--  [ ] Los iconos se muestran correctamente
+### Estados de autenticación:
 
-### Experiencia de Usuario
-
--  [ ] Las animaciones son fluidas
--  [ ] Los mensajes de feedback son claros
--  [ ] La navegación es intuitiva
--  [ ] Los tiempos de respuesta son aceptables
-
-## 📱 Pruebas de Dispositivo
-
-### Diferentes Versiones de Android
-
--  [ ] Android 6.0 (API 23)
--  [ ] Android 8.0 (API 26)
--  [ ] Android 10 (API 29)
--  [ ] Android 12 (API 31)
-
-### Diferentes Tamaños de Pantalla
-
--  [ ] Teléfonos pequeños (< 5")
--  [ ] Teléfonos medianos (5" - 6")
--  [ ] Teléfonos grandes (> 6")
--  [ ] Tablets
-
-## 🔒 Pruebas de Seguridad
-
-### Autenticación
-
--  [ ] No se almacenan datos biométricos en la app
--  [ ] Las respuestas de autenticación son manejadas seguramente
--  [ ] No hay logs sensibles en producción
+-  🟢 **Éxito**: Huella reconocida correctamente
+-  🔴 **Fallo**: Huella no reconocida
+-  ⚠️ **Error**: Problemas técnicos o de hardware
+-  🚫 **Cancelado**: Usuario cancela el proceso
