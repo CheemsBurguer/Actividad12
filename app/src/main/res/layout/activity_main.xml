@@ -34,7 +34,6 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="24dp"
                 android:src="@drawable/ic_fingerprint"
-                android:tint="@color/primary_blue"
                 app:tint="@color/primary_blue" />
 
             <!-- Título -->
@@ -69,7 +68,8 @@
                 style="@style/CustomButton"
                 android:text="@string/authenticate_button"
                 app:icon="@drawable/ic_fingerprint"
-                app:iconGravity="textStart" />
+                app:iconGravity="textStart"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
